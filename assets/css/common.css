@@ -1,0 +1,45 @@
+html{background: linear-gradient(#FFB3E7,#FF54C9);
+  @keyframe animation-name{
+  0%{ background: pink;}
+  50%{ background: blue;}
+  100%{ background: orange;}
+  }}
+{
+  color: #333;
+  background: #fff;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+  height:auto;
+}
+
+a{
+  color:#333;
+}
+
+li{
+  list-style-position: inside;
+}
+
+
+.mb_s{
+  margin-bottom: 10px;
+}
+
+.mb_m{
+  margin-bottom: 20px;
+}
+
+.mb_l{
+  margin-bottom: 40px;
+}
