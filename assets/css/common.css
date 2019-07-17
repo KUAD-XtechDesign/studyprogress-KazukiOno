@@ -1,4 +1,10 @@
-html {
+html{background: linear-gradient(#FFB3E7,#FF54C9);
+  @keyframe animation-name{
+  0%{ background: pink;}
+  50%{ background: blue;}
+  100%{ background: orange;}
+  }}
+{
   color: #333;
   background: #fff;
 
