@@ -1,17 +1,34 @@
-html{background: linear-gradient(#FFB3E7,#FF54C9);
-  @keyframe animation-name{
-  0%{ background: pink;}
-  50%{ background: blue;}
-  100%{ background: orange;}
-  }}
-{
+html{
   color: #333;
   background: #fff;
 
   font-size: 14px;
   line-height: 1.8;
 }
-
+.youtube {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.youtube2 {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.youtube2 iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
 *{
   margin:0;
   padding:0;
