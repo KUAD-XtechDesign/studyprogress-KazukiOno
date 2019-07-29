@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="./assets/css/custom.css">
-    <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./assets/jquery/jquery-3.4.1.min.js"></script>
 
     <script>
     $(function(){
@@ -17,10 +17,10 @@
 
     $(function(){
         $(".mainSite").css({opacity:'0'});
-        setTimeout(function(){
+        setTimeout(function() {
         $(".mainSite").css("display", "block");
         $(".mainSite").stop().animate({opacity:'1'},1800);
-      },4800);
+      }, 4800);
     });
     </script>
 
