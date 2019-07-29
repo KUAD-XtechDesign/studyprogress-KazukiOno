@@ -3,39 +3,103 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="./assets/css/common.css">
     <link rel="stylesheet" href="./assets/css/custom.css">
+    <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+
+    <script>
+    $(function(){
+    $(".mainSite").css("display", "none");
+
+    setTimeout(function() {
+        $('.anime').fadeOut();
+    	}, 4800);
+    });
+
+    $(function(){
+        $(".mainSite").css({opacity:'0'});
+        setTimeout(function(){
+        $(".mainSite").css("display", "block");
+        $(".mainSite").stop().animate({opacity:'1'},1800);
+      },4800);
+    });
+    </script>
+
+    <style>
+
+    body,html {
+    	width: 100%;
+    	height: 100%;
+    	margin: 0;
+    	padding: 0;
+    }
+
+    .anime {
+    	width: 100%;
+    	height: 100%;
+    	max-height: 1080px;
+    	background-color: #E9E3E3;
+    	position: relative;
+    }
+
+    .anime img {
+      width: 100%;
+      height: 100%;
+    	display: block;
+    	position: absolute;
+    	top: 0%;
+    	left: 0%;
+    }
+
+    .mainSite {
+    	width: 100%;
+    	height: 100%;
+    	max-height: 1080px;
+    	background-color: #FFF;
+    	position: relative;
+    }
+
+    .mainSite p {
+    	font-size: 160%;
+    	color: #FFF;
+    	position: absolute;
+    	top: 42%;
+    	left: 40%;
+    }
+
+    </style>
   </head>
-  <body>
-    <header>
-      <nav id="main_nav">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./swnw:1.html">SwNwBasis:1</a></li>
-          <li><a href="./CV.html">CV</a></li>
-        </ul>
-      </nav>
-    </header>
-     <hr>
-      <main>
-        <h1>私の学習進歩ページ</h1>
-        <img src="./assets/images/image7.gif" alt="">
-        <h2>履修科目あ</h2>
-        <h3>前期</h3>
-         <ol>
-          <li>ソフトウェアネットワーク演習Ⅰ</li>
-         </ol>
-        <h4>後期</h4>
-         <ol>
-           <li>ソフトウェアネットワーク演習Ⅱ</li>
-         </ol>
-         <h2>自己紹介</h2>
-         <footer>
-          <small>クロステックデザインコース１回生の大野和紀です。</small>
-        </footer>
+ <body>
+   <div class="anime">
+     <img src="404_02.gif" />
+   </div>
+<div class="mainSite">
+
+ <body>
+  <header>
+  <nav id="main_nav">
+    <ul>
+      <li><a href="index_01.html">Home</a></li>
+      <li><a href="CV.html">CV</a></li>
+    </ul>
+  </nav>
+  </header>
    <hr>
-
-      </main>
-
-  </body>
-</html>
+    <main>
+      <h1>私の学習進歩ページ</h1>
+      <img src="assets/images/image7.gif" alt="">
+      <h2>履修科目</h2>
+      <h3>前期</h3>
+       <ol>
+        <li><a href="./swnw:1.html">ソフトウェアネットワーク演習Ⅰ</a></li>
+       </ol>
+      <h4>後期</h4>
+       <ol>
+         <li><a href="./swnw:2.html">ソフトウェアネットワーク演習Ⅱ</a></li>
+       </ol>
+    </main>
+    　<hr>
+          <center>
+           <h3><small>KUAD クロステックデザイン２０１９</small></h3>
+         </center>
+    </body>
+ </html>
